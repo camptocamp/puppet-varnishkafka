@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "author": "Camptocamp",
   "summary": "Puppet Module to install and configure varnishkafka",
-  "license": "Camptocamp SA",
+  "license": "Apache-2.0",
   "source": "https://github.com/camptocamp/puppet-varnishkafka",
   "project_page": "https://github.com/camptocamp/puppet-varnishkafka",
   "issues_url": "https://github.com/camptocamp/puppet-varnishkafka/issues",
