@@ -1,7 +1,16 @@
 ---
 .travis.yml:
-  acceptance:
-    - '*'
+  user: camptocamp
+  secure: "WNsV6TjebL5FHJlJE4yTTmz1qzwveW7P//oZY3VkarOfLgvmC+oKaAWoAO5uqqk+rtj2GwrfTknhvFLqwc1+sJfLfu7rFgV5TuJ6/cnx+82fKdAUquKIH+GI3qGfX3g+/l6UUoihZifAPcojp3uXnZ01BS3/Ga2nW9Fib3pHrIjXANEV01yeiv5TjgqV6GF/qfXr6ZECaxYdoGv1fehvykJwmfbFDT5tXUs1+Gpg1YhQPvNddE/xg/bBXkUYEgwp9EoDIASBiqauypt/sM/A0ivnEABQtPvpmu9gXI4powZuqRA8AknP/VEkjlqZWKGLOhLJZlD/obVEnpNduhX/m6ubTKNeRuS9EbxUjlzrJ0UsAsYUPeyGyEuBXYcnTcUPaVjyQtC1y39vSZn2vwKkjLTBoys0zOtgnME9AwQnAYgZYO3khby+MpMd01USvQT4aX6jUHTN2UpDvRT5j/fLNkM6G84sK78OGG0oDZDWXMWvrSGPYTo9TpSIl8rUt+/uo1esDZCVwhdRe1B2H1IeWK9zPUzO/DR9pIj3De+vyIpWcPid3oU5B18QF0yos+gOIALvFBaKxPL43q/eE86cmcT/AqS8+XW7c1i6qJZK8hR2hf2o+ur0CBLvNw3Kpr0GFdoBqbaaMBeKl8gnDNNcfOwWjRER9+sgQ6UT475ex4I="
+  branches:
+    - master
+    - /^\d/
+  deploy_to_forge:
+    enabled: true
+    tag_regex: "^\\d"
+Gemfile:
+  optional:
+    ':development':
+      - gem: 'github_changelog_generator'
 Rakefile:
-  metadata-json-lint_options:
-    strict_license: false
+  changelog_version_tag_pattern: '%s'
