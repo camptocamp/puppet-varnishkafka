@@ -24,7 +24,7 @@ class varnishkafka::params {
         }
       }
     }
-    'RedHat': {
+    'RedHat', 'CentOS': {
       case $::operatingsystemmajrelease {
         '7': {
           $daemonize = false
