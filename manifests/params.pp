@@ -16,7 +16,7 @@ class varnishkafka::params {
   case $::operatingsystem {
     'Debian': {
       case $::operatingsystemmajrelease {
-        '8': {
+        '8','10': {
           $daemonize = false
         }
         default: {
