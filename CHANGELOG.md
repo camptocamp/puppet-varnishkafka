@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [0.1.2](https://github.com/Camptocamp/puppet-varnishkafka/tree/0.1.1) (2021-02-26)
+
+[Full Changelog](https://github.com/Camptocamp/puppet-varnishkafka/compare/0.1.1...0.1.2)
+
 ## [0.1.1](https://github.com/Camptocamp/puppet-varnishkafka/tree/0.1.1) (2020-03-09)
 
 [Full Changelog](https://github.com/Camptocamp/puppet-varnishkafka/compare/0.1.0...0.1.1)
