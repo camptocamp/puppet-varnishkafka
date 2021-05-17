@@ -1,18 +1,23 @@
 class varnishkafka::params {
-  $service_name       = 'varnishkafka'
-  $log_syslog         = true
-  $log_stderr         = false
-  $log_errors         = true
-  $log_stats_append   = true
-  $log_stats_file     = '/var/run/varnishkafka.stats.json'
-  $log_stats_interval = 60
-  $kafka_broker_list  = [ 'localhost:9092' ]
-  $kafka_retries      = 3
-  $kafka_partition    = -1
-  $kafka_buffer_len   = 1000000
-  $kafka_require_acks = true
-  $kafka_timeout      = 60000
-  $kafka_topic        = 'logs'
+  $service_name             = 'varnishkafka'
+  $log_syslog               = true
+  $log_stderr               = false
+  $log_errors               = true
+  $log_stats_append         = true
+  $log_stats_file           = '/var/run/varnishkafka.stats.json'
+  $log_stats_interval       = 60
+  $kafka_broker_list        = [ 'localhost:9092' ]
+  $kafka_retries            = 3
+  $kafka_partition          = -1
+  $kafka_buffer_len         = 1000000
+  $kafka_require_acks       = true
+  $kafka_timeout            = 60000
+  $kafka_topic              = 'logs'
+  $kafka_security_protocol  = undef
+  $kafka_sasl_mechanism     = undef
+  $kafka_sasl_username      = undef
+  $kafka_sasl_password      = undef
+
   case $::operatingsystem {
     'Debian': {
       case $::operatingsystemmajrelease {
