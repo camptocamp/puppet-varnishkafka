@@ -16,6 +16,18 @@ kafka.queue.buffering.max.messages = <%= scope.lookupvar('varnishkafka::kafka_bu
 kafka.topic.request.required.acks  = <%= scope.lookupvar('varnishkafka::kafka_require_acks') ? '1' : '0' %>
 kafka.topic.message.timeout.ms     = <%= scope.lookupvar('varnishkafka::kafka_timeout') %>
 kafka.topic                        = <%= scope.lookupvar('varnishkafka::kafka_topic') %>
+<% if scope.lookupvar('varnishkafka::kafka_security_protocol') -%>
+kafka.security.protocol            = <%= scope.lookupvar('varnishkafka::kafka_security_protocol') %>
+<% end -%>
+<% if scope.lookupvar('varnishkafka::kafka_sasl_mechanism') -%>
+kafka.sasl.mechanism               = <%= scope.lookupvar('varnishkafka::kafka_sasl_mechanism') %>
+<% end -%>
+<% if scope.lookupvar('varnishkafka::kafka_sasl_username') -%>
+kafka.sasl.username                = <%= scope.lookupvar('varnishkafka::kafka_sasl_username') %>
+<% end -%>
+<% if scope.lookupvar('varnishkafka::kafka_sasl_password') -%>
+kafka.sasl.password                = <%= scope.lookupvar('varnishkafka::kafka_sasl_password') %>
+<% end -%>
 log.kafka.msg.error                = <%= scope.lookupvar('varnishkafka::log_errors') %>
 log.stderr                         = <%= scope.lookupvar('varnishkafka::log_stderr') %>
 log.syslog                         = <%= scope.lookupvar('varnishkafka::log_syslog') %>
