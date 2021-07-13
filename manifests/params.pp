@@ -34,6 +34,9 @@ class varnishkafka::params {
         '7': {
           $daemonize = false
         }
+        '8': {
+          $daemonize = false
+        }
         default: {
           fail("unsupported OS version ${::operatingsystem}-${::operatingsystemmajrelease}")
         }
