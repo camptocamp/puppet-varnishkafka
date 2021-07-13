@@ -6,6 +6,7 @@ class varnishkafka::params {
   $log_stats_append         = true
   $log_stats_file           = '/var/run/varnishkafka.stats.json'
   $log_stats_interval       = 60
+  $rotate_log_stats_file    = false
   $kafka_broker_list        = [ 'localhost:9092' ]
   $kafka_retries            = 3
   $kafka_partition          = -1
