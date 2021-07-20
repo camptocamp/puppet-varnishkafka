@@ -7,6 +7,7 @@ class varnishkafka (
   $log_syslog               = $::varnishkafka::params::log_syslog,
   $log_stderr               = $::varnishkafka::params::log_stderr,
   $log_errors               = $::varnishkafka::params::log_errors,
+  $rotate_log_stats_file    = $::varnishkafka::params::rotate_log_stats_file,
   $log_stats_append         = $::varnishkafka::params::log_stats_append,
   $log_stats_file           = $::varnishkafka::params::log_stats_file,
   $log_stats_interval       = $::varnishkafka::params::log_stats_interval,
@@ -28,6 +29,7 @@ class varnishkafka (
   validate_bool($log_errors)
   validate_bool($log_stats_append)
   validate_bool($kafka_require_acks)
+  validate_bool($rotate_log_stats_file)
 
   validate_integer($kafka_retries)
   validate_integer($kafka_partition)

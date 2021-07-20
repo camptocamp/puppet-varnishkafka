@@ -1,0 +1,7 @@
+<%= scope.lookupvar('varnishkafka::log_stats_file') %> {
+  size 0
+  rotate 0
+  copytruncate
+  missingok
+}
+
