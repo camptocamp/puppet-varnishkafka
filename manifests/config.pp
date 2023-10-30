@@ -5,6 +5,7 @@ class varnishkafka::config {
     group   => 'root',
     mode    => '0644',
     content => template("${module_name}/varnishkafka.conf.erb"),
+    require => Class['varnishkafka::install'],
     notify  => Class['varnishkafka::service'],
   }
   if ($::varnishkafka::rotate_log_stats_file) {
