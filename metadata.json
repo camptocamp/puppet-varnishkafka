@@ -18,40 +18,31 @@
     }
   ],
   "operatingsystem_support": [
-    {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "7",
-        "8",
-        "10"
-      ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "14.04",
-        "15.04",
-        "15.10",
-        "16.04"
-      ]
-    },
-    {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "5",
-        "6",
-        "7"
-      ]
-    },
-    {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ]
-    }
+  {
+    "operatingsystem": "RedHat",
+    "operatingsystemrelease": [
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "operatingsystem": "Debian",
+    "operatingsystemrelease": [
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": [
+      "15.04",
+      "16.04",
+      "18.04",
+      "20.04"
+    ]
+  }
   ],
   "requirements": [
     {
